@@ -1,0 +1,41 @@
+{
+  "name": "bun-react-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "src/index.tsx",
+  "module": "src/index.tsx",
+  "scripts": {
+    "dev": "bun --hot src/index.tsx",
+    "build": "bun build ./src/index.html --outdir=dist --sourcemap --target=browser --minify --define:process.env.NODE_ENV='\"production\"' --env='BUN_PUBLIC_*'",
+    "start": "NODE_ENV=production bun src/index.tsx",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/material": "^7.1.1",
+    "@mui/styled-engine-sc": "^7.1.1",
+    "date-fns": "^4.1.0",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "formik": "^2.4.6",
+    "react": "^19",
+    "react-dom": "^19",
+    "styled-components": "^6.1.19",
+    "winston": "^3.17.0",
+    "yup": "^1.6.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.29.0",
+    "@types/bun": "latest",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9.29.0",
+    "eslint-plugin-prettier": "^5.4.1",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-security": "^3.0.1",
+    "eslint-plugin-unicorn": "^59.0.1",
+    "globals": "^16.2.0",
+    "typescript-eslint": "^8.34.0"
+  }
+}
