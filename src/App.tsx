@@ -1,8 +1,9 @@
 import { format } from "date-fns";
-import {Container, Stack, useMediaQuery, useTheme} from '@mui/material';
+import {Container, Stack} from '@mui/material';
 
 import { APITester } from "./APITester";
 import { MyForm } from "./MyForm"
+import { FormikForm } from "./MyForm_useFormik"
 import "./index.css";
 
 import logo from "./logo.svg";
@@ -13,7 +14,6 @@ export function App() {
 
   return (
     <>
-      <Container></Container>
         <Stack
           direction="row"
         >
@@ -33,7 +33,8 @@ export function App() {
             </div>
           </Container>
 
-          <MyForm />
+        {/* <MyForm /> */}
+        <FormikForm />
         </Stack>
       <Container />
     </>

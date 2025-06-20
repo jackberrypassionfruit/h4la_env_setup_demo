@@ -1,5 +1,11 @@
 # bun-react-template
 
+To install bun:
+
+```bash
+curl -fsSL https://bun.sh/install | bash
+```
+
 To install dependencies:
 
 ```bash
